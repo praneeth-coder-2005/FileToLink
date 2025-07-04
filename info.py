@@ -23,8 +23,8 @@ else:
 URL = environ.get("URL", "")
 
 # Admins, Channels & Users
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002260555414'))
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1894915577').split()]
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://claw-earning:5213680099@cluster0.je3b1k7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
